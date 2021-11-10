@@ -5,39 +5,51 @@ exports[`Pruebas en <Contact /> Debe de mostrarse corrctamente 1`] = `
   <h1>
     Contacto
   </h1>
-  <styled.form
+  <form
+    className="sc-bdvvtL jipeuy"
     onSubmit={[Function]}
   >
-    <styled.input
+    <input
       autoComplete="off"
+      className="sc-gsDKAQ ekTxYs"
       name="email"
       onBlur={[Function]}
       onChange={[Function]}
       placeholder="Email"
       type="text"
     />
-    <styled.div>
-      <styled.p>
+    <div
+      className="sc-gKclnd eurpVI"
+    >
+      <p
+        className="sc-jRQBWg dCITNH"
+      >
         * Required
-      </styled.p>
-    </styled.div>
-    <styled.textarea
+      </p>
+    </div>
+    <textarea
       autoComplete="off"
+      className="sc-dkPtRN iFcrya"
       name="message"
       onBlur={[Function]}
       onChange={[Function]}
       placeholder="Mensaje"
     />
-    <styled.div>
-      <styled.p>
+    <div
+      className="sc-gKclnd eurpVI"
+    >
+      <p
+        className="sc-jRQBWg dCITNH"
+      >
         * Required
-      </styled.p>
-    </styled.div>
-    <styled.button
+      </p>
+    </div>
+    <button
+      className="sc-hKwDye hWyEWZ"
       type="submit"
     >
       Enviar
-    </styled.button>
-  </styled.form>
+    </button>
+  </form>
 </div>
 `;

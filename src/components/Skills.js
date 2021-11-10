@@ -5,7 +5,7 @@ import { portfolioImages } from "./../helpers/helperImages";
 export const Skills = () => {
   return (
     <div>
-      <h1>Skills</h1>
+      <h2>Skills</h2>
       <SkillsContainer>
         <SkillItem>
           <SkillIcon src={portfolioImages("./html5.png").default} alt="html5" />

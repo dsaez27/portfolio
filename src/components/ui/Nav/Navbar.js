@@ -1,11 +1,14 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import styled from "styled-components";
 import { Burger } from "./Burger";
 
 export const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">Portfolio</div>
+      <Fade direction="bottom" duration="3000">
+        <div className="logo">Portfolio</div>
+      </Fade>
       <Burger />
     </Nav>
   );

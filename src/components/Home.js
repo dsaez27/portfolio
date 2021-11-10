@@ -9,9 +9,9 @@ import { Draw } from "./ui/Draw";
 export const Home = () => {
   return (
     <>
-      <Particles id="tsparticles" options={particles} />
+      <Particles id="tsparticles" options={particles}  style={{padding: '0'}}/>
       <Draw style={{ zIndex: "1" }} />
-      <HomeContainer style={{ zIndex: "2" }}>
+      <HomeContainer style={{ zIndex: "2"}}>
         <HomeTitle>
           Hello I'm a <br />
           Front-end Developer
@@ -32,32 +32,34 @@ const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  padding: 2rem 0;
   width: 100%;
+  @media (max-width: 768px) {
+    justify-content: flex-end;
+    padding: 0 0 2rem 0;
+  }
 `;
 
 const HomeTitle = styled.h1`
   color: #fff;
-  font-size: 3rem;
-
-  &::after {
-    content: none;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 
 const HomeSubTitle = styled.p`
-  color: #777;
   font-size: 1rem;
   padding: 0.5rem 0;
   width: 400px;
 
-  @media (max-width: 425px) {
+  @media (max-width:530px) {
     width: 90%;
+    font-size: 0.9rem;
   }
 `;
 
 const HomeButton = styled.button`
   color: #fff;
   height: 3rem;
-  margin: 1rem 0;
   width: 10rem;
 `;

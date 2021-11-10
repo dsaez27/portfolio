@@ -6,7 +6,7 @@ import { Card } from "./ui/Card";
 export const Proyects = () => {
   return (
     <div>
-      <h1>Proyectos</h1>
+      <h2>Proyectos</h2>
       
       <CardContainer>
         {proyects.map((proyect, index) => {

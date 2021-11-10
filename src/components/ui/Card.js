@@ -66,16 +66,15 @@ const Cards = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
 `;
 
 const CardDescription = styled.p`
-  font-size: 1rem;
+  font-size: 14px;
 `;
 
 const CardLink = styled.a`
-  font-size: 1rem;
+  font-size: 12px;
   text-decoration: none;
 `;
 
@@ -86,5 +85,5 @@ const CardTechnology = styled.div`
 `;
 
 const CardTechnologyItem = styled.p`
-  font-size: 13px;
+  font-size: 12px;
 `;

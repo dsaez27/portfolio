@@ -3,7 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <div>
-      <h1>Sobre mí</h1>
+      <h2>Sobre mí</h2>
       <p>Soy analista programador y desarrollador React.js</p>
     </div>
   );
