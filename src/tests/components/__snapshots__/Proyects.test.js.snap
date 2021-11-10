@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Proyects /> debe de funcionar correctamente 1`] = `
+<div>
+  <h1>
+    Proyectos
+  </h1>
+  <styled.div>
+    <Card
+      description=""
+      image="https://picsum.photos/1200/500"
+      key="0"
+      link="https://www.google.com"
+      technologies={
+        Array [
+          "React",
+          "NodeJS",
+          "MongoDB",
+        ]
+      }
+      title="Proyecto 1"
+    />
+    <Card
+      description=""
+      image="https://picsum.photos/1200/500"
+      key="1"
+      link="https://www.google.com"
+      technologies={
+        Array [
+          "React",
+          "NodeJS",
+          "MongoDB",
+        ]
+      }
+      title="Proyecto 2"
+    />
+    <Card
+      description=""
+      image="https://picsum.photos/1200/500"
+      key="2"
+      link="https://www.google.com"
+      technologies={
+        Array [
+          "React",
+          "NodeJS",
+          "MongoDB",
+        ]
+      }
+      title="Proyecto 3"
+    />
+    <Card
+      description=""
+      image="https://picsum.photos/1200/500"
+      key="3"
+      link="https://www.google.com"
+      technologies={
+        Array [
+          "React",
+          "NodeJS",
+          "MongoDB",
+        ]
+      }
+      title="Proyecto 4"
+    />
+    <Card
+      description=""
+      image="https://picsum.photos/1200/500"
+      key="4"
+      link="https://www.google.com"
+      technologies={
+        Array [
+          "React",
+          "NodeJS",
+          "MongoDB",
+        ]
+      }
+      title="Proyecto 5"
+    />
+    <Card
+      description=""
+      image="https://picsum.photos/1200/500"
+      key="5"
+      link="https://www.google.com"
+      technologies={
+        Array [
+          "React",
+          "NodeJS",
+          "MongoDB",
+        ]
+      }
+      title="Proyecto 6"
+    />
+  </styled.div>
+</div>
+`;

@@ -1,0 +1,7 @@
+
+.tsparticles-canvas-el {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+}

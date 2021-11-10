@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <skills /> Debe de mostrarse correctamente 1`] = `
+<div>
+  <h1>
+    Skills
+  </h1>
+  <styled.div>
+    <styled.div>
+      <styled.img
+        alt="html5"
+      />
+      <styled.p>
+        HTML5
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="css3"
+      />
+      <styled.p>
+        CSS3
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="javascript"
+      />
+      <styled.p>
+        Javascript
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="react"
+      />
+      <styled.p>
+        React.js
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="sass"
+      />
+      <styled.p>
+        Sass
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="bootstrap"
+      />
+      <styled.p>
+        Bootstrap
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="git"
+      />
+      <styled.p>
+        Git
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.img
+        alt="github"
+      />
+      <styled.p>
+        Github
+      </styled.p>
+    </styled.div>
+  </styled.div>
+</div>
+`;
