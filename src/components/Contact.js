@@ -6,7 +6,12 @@ export const Contact = () => {
     <div>
       <h2>Contacto</h2>
       <ContactContainer>
-        <ContactItem>Mis Redes</ContactItem>
+        <div>
+          <h3>
+            Mis redes sociales
+          </h3>
+        </div>
+        <div></div>
       </ContactContainer>
     </div>
   );
@@ -19,12 +24,4 @@ const ContactContainer = styled.div`
   justify-content: flex-start;
   width: 100%;
 `;
-
-const ContactItem = styled.h3`
-  color: #fff;
-  padding: 1rem 0;
-  font-weight: 200;
-  margin-bottom: 1rem;
-`;
-
 

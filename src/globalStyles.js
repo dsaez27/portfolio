@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f44653;
   margin: 0.5rem 0;
   line-height: 1.2;
-  font-weight: bold;
 }
 
 h1{
@@ -54,7 +53,7 @@ h2{
 
 p {
     color: #777;
-    font-size: 1rem;
+    font-size: 12px;
     padding: 2rem 0;
 }
 
