@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 export const Card = ({ title, description, image, link, technologies }) => {
-
   console.log(technologies);
 
   return (
@@ -12,7 +11,15 @@ export const Card = ({ title, description, image, link, technologies }) => {
         <CardContent>
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
-          <CardTechnologies>{technologies}</CardTechnologies>
+          <CardTechnologies>
+            {technologies.map((technology, index) => {
+              return (
+                <CardTechnologyItem key={index}>
+                  {technology}
+                </CardTechnologyItem>
+              );
+            })}
+          </CardTechnologies>
         </CardContent>
       </CardContainer>
     </>
@@ -48,7 +55,7 @@ const CardContainer = styled.div`
 
   &:hover {
     img {
-      transform: scale(1.05);
+      transform: scale(1.2);
     }
   }
 `;
@@ -89,10 +96,17 @@ const CardDescription = styled.p`
   padding: 0;
 `;
 
-const CardTechnologies = styled.p`
+const CardTechnologies = styled.div`
   font-size: 0.8rem;
   color: #fff;
-  padding: 3px;
-  border-radius: 0.5rem;
-  background: #fff;
+  padding: 0;
+`;
+
+const CardTechnologyItem = styled.span`
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  padding: 0.2rem 0.3rem;
+  border-radius: 1rem;
+  background: #f44653;
+  color: #fff;
 `;
