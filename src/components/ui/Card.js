@@ -28,6 +28,7 @@ export const Card = ({ title, description, image, link, technologies }) => {
 
 const CardContainer = styled.div`
   border: 0px solid aqua;
+  cursor: pointer;
   margin: 0.5rem;
   position: relative;
   height: 12rem;
