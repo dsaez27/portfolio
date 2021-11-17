@@ -1,55 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en <Contact /> Debe de mostrarse corrctamente 1`] = `
-<div>
-  <h1>
+exports[`Pruebas en <Contact /> Debe de mostrarse correctamente 1`] = `
+Array [
+  <h2>
     Contacto
-  </h1>
-  <form
-    className="sc-bdvvtL jipeuy"
-    onSubmit={[Function]}
+  </h2>,
+  <div
+    className="sc-furwcr bEGSHh"
   >
-    <input
-      autoComplete="off"
-      className="sc-gsDKAQ ekTxYs"
-      name="email"
-      onBlur={[Function]}
-      onChange={[Function]}
-      placeholder="Email"
-      type="text"
-    />
-    <div
-      className="sc-gKclnd eurpVI"
-    >
-      <p
-        className="sc-jRQBWg dCITNH"
+    <div>
+      <form
+        id="form-validation"
+        onSubmit={[Function]}
       >
-        * Required
-      </p>
+        <label
+          htmlFor="name"
+        >
+          Nombre
+        </label>
+        <input
+          id="name"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Nombre y apellido"
+          type="text"
+        />
+        <p />
+        <label
+          htmlFor="email"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Email"
+          type="email"
+        />
+        <p />
+        <label
+          htmlFor="message"
+        >
+          Mensaje
+        </label>
+        <textarea
+          cols="50"
+          id="message"
+          name="message"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Mensaje"
+          rows="10"
+        />
+        <p />
+        <button
+          type="submit"
+        >
+          Enviar
+        </button>
+      </form>
     </div>
-    <textarea
-      autoComplete="off"
-      className="sc-dkPtRN iFcrya"
-      name="message"
-      onBlur={[Function]}
-      onChange={[Function]}
-      placeholder="Mensaje"
-    />
-    <div
-      className="sc-gKclnd eurpVI"
-    >
-      <p
-        className="sc-jRQBWg dCITNH"
-      >
-        * Required
-      </p>
-    </div>
-    <button
-      className="sc-hKwDye hWyEWZ"
-      type="submit"
-    >
-      Enviar
-    </button>
-  </form>
-</div>
+  </div>,
+]
 `;

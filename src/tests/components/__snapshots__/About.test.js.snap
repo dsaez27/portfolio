@@ -1,12 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pruebas en <About /> Debe de mostrarse correctamente 1`] = `
-<div>
-  <h1>
+<Fragment>
+  <h2>
     Sobre mí
-  </h1>
-  <p>
-    Soy analista programador y desarrollador React.js
-  </p>
-</div>
+  </h2>
+  <styled.div>
+    <styled.div>
+      <styled.img
+        alt="Astronout"
+      />
+      <styled.img
+        alt="Profile Image"
+      />
+      <styled.div>
+        <span>
+          Hola, soy Daniel Sáez analista programador
+        </span>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</Fragment>
 `;

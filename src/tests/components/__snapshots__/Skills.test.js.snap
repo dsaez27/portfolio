@@ -2,69 +2,95 @@
 
 exports[`Pruebas en <skills /> Debe de mostrarse correctamente 1`] = `
 <div>
-  <h1>
+  <h2>
     Skills
-  </h1>
+  </h2>
   <styled.div>
-    <styled.div>
+    <styled.div
+      key="0"
+    >
       <styled.img
-        alt="html5"
+        alt="Html5"
       />
       <styled.p>
-        HTML5
+        Html5
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="1"
+    >
       <styled.img
-        alt="css3"
+        alt="CSS3"
       />
       <styled.p>
         CSS3
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="2"
+    >
       <styled.img
-        alt="javascript"
+        alt="JavaScript"
       />
       <styled.p>
-        Javascript
+        JavaScript
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="3"
+    >
       <styled.img
-        alt="react"
+        alt="React.js"
       />
       <styled.p>
         React.js
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="4"
+    >
       <styled.img
-        alt="sass"
+        alt="Redux"
+      />
+      <styled.p>
+        Redux
+      </styled.p>
+    </styled.div>
+    <styled.div
+      key="5"
+    >
+      <styled.img
+        alt="Sass"
       />
       <styled.p>
         Sass
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="6"
+    >
       <styled.img
-        alt="bootstrap"
+        alt="Bootstrap"
       />
       <styled.p>
         Bootstrap
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="7"
+    >
       <styled.img
-        alt="git"
+        alt="Git"
       />
       <styled.p>
         Git
       </styled.p>
     </styled.div>
-    <styled.div>
+    <styled.div
+      key="8"
+    >
       <styled.img
-        alt="github"
+        alt="Github"
       />
       <styled.p>
         Github

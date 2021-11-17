@@ -5,11 +5,11 @@ export const RightNav = ({ open }) => {
     return (
         <>
             <Ul open={open}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Proyects</li>
+                <li>Inicio</li>
+                <li>Sobre mí</li>
+                <li>Proyectos</li>
                 <li>Skills</li>
-                <li>Contact</li>
+                <li>Contacto</li>
             </Ul>
         </>
     );
@@ -26,9 +26,8 @@ const Ul = styled.ul`
         transition: 0.3s;
 
         &:hover {
-          color: #FB4855;
-          background-color: #212336;
-      }
+            color: #fb4855;
+        }
     }
 
     @media (max-width: 768px) {
@@ -55,7 +54,7 @@ const Ul = styled.ul`
             transition: 0.3s;
 
             &:hover {
-                color: #FB4855;
+                color: #fb4855;
                 background-color: #212336;
             }
         }

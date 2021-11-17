@@ -1,5 +1,5 @@
 <svg
-  class="img-fluid"
+  className="img-fluid"
   id="outputsvg"
   xmlns="http://www.w3.org/2000/svg"
   style="transform: none; transform-origin: 50% 50%; cursor: move"

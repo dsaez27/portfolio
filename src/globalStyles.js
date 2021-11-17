@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,8 +31,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #f44653;
-  margin: 0.5rem 0;
-  line-height: 1.2;
 }
 
 h1{
@@ -52,9 +51,10 @@ h2{
 }
 
 p {
-    color: #777;
+    color: #ccc;
     font-size: 12px;
     padding: 2rem 0;
+    font-weight: 500;
 }
 
 button, input, textarea {
@@ -73,9 +73,11 @@ button{
   height: 3rem;
   margin: 1rem 0px;
   width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
 
   &:hover {
-    background: #cc3b44;
+    background: #872c33;
     transition: 0.3s;
   }
 }
