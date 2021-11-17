@@ -34,7 +34,6 @@ export const ContactForm = () => {
     });
 
     const onSubmit = async (data) => {
-        console.log(data);
         setEstadoModal(true);
         reset();
     };
