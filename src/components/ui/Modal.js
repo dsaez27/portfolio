@@ -9,8 +9,7 @@ export const Modal = ({
     mostrarHeader,
     mostrarOverlay,
     posicionModal,
-    padding,
-    background,
+    padding
 }) => {
     return (
         <>
@@ -68,6 +67,8 @@ const Overlay = styled.div`
     justify-content: center;
     align-items: ${(props) =>
         props.posicionModal ? props.posicionModal : 'center'};
+
+    z-index: 10;
 `;
 
 const ContenedorModal = styled.div`

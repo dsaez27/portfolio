@@ -42,16 +42,12 @@ const Container = styled.div`
     align-items: center;
 
     > div {
-        max-width: 800px;
-        padding: 2rem 0;
+        max-width: 768px;
+        padding: 1rem;
         width: 100%;
 
         &:first-child {
             padding: 0;
-        }
-
-        @media (max-width: 768px) {
-            width: 90%;
         }
     }
 `;

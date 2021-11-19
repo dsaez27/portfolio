@@ -14,9 +14,10 @@ exports[`Pruebas en <About /> Debe de mostrarse correctamente 1`] = `
         alt="Profile Image"
       />
       <styled.div>
-        <span>
-          Hola, soy Daniel Sáez analista programador
-        </span>
+        <h1>
+          "Daniel Sáez"
+        </h1>
+        <span />
       </styled.div>
     </styled.div>
   </styled.div>

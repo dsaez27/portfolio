@@ -21,7 +21,7 @@ const Nav = styled.nav`
     justify-content: space-around;
     width: 100%;
     z-index: 3;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 
@@ -38,8 +38,7 @@ const Nav = styled.nav`
     }
 
     @media (max-width: 768px) {
-        justify-content: flex-start;
-        margin: auto auto 30px;
+        justify-content: flex-start; 
         padding: 0 1rem;
     }
 

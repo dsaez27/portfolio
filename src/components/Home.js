@@ -36,18 +36,17 @@ const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    padding: 2rem 0;
+    padding: 1rem;
     width: 100%;
     @media (max-width: 768px) {
         justify-content: flex-end;
-        padding: 0 0 2rem 0;
     }
 `;
 
 const HomeTitle = styled.h1`
     color: #fff;
     @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 `;
 
@@ -57,8 +56,8 @@ const HomeSubTitle = styled.p`
     width: 400px;
 
     @media (max-width: 530px) {
-        width: 90%;
         font-size: 0.9rem;
+        width: 100%;
     }
 `;
 

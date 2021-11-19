@@ -31,6 +31,7 @@ const Foot = styled.div`
 
     img {
         width: 20px;
+        height: 20px;
         margin: 0 5px;
     }
 `;

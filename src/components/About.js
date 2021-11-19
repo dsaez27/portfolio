@@ -17,7 +17,8 @@ export const About = () => {
                         alt='Profile Image'
                     />
                     <Profile>
-                        <span>Hola, soy Daniel Sáez analista programador</span>
+                        <h1>"Daniel Sáez"</h1>
+                        <span></span>
                     </Profile>
                 </AboutCard>
             </AboutContainer>
@@ -26,9 +27,7 @@ export const About = () => {
 };
 
 const AboutContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    padding: 2rem 0;
+    padding: 1rem;
 `;
 
 const AboutCard = styled.div`
@@ -52,19 +51,24 @@ const ProfileImage = styled.img`
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    transform: translateY(-50%);
+    transform: translateY(75%);
+    position: absolute;
 
     @media (max-width: 768px) {
         width: 100px;
         height: 100px;
+        transform: translateY(150%);
     }
 `;
 
 const Profile = styled.div`
     width: 100%;
     height: 100%;
-    transform: translateY(-50%);
-    padding: 1 rem;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     span {
         padding: 0;
         color: #fff;

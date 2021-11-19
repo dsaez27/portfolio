@@ -33,7 +33,7 @@ const CardContainer = styled.div`
     overflow: hidden;
     border-radius: 0.5rem;
     flex: 1;
-    min-width: 290px;
+    min-width: 260px;
     box-shadow: 0 0 1rem rgb(0 0 0 / 50%);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;

@@ -39,7 +39,7 @@ export const ContactForm = () => {
     };
 
     return (
-        <div>
+        <>
             <form onSubmit={handleSubmit(onSubmit)} id='form-validation'>
                 <label htmlFor='name'>Nombre</label>
                 <input
@@ -77,7 +77,7 @@ export const ContactForm = () => {
                 mostrarHeader={true}
                 mostrarOverlay={true}
                 posicionModal={'center'}
-                padding={'3rem'}
+                padding={'4rem 2rem 1rem'}
             >
                 <Contenido>
                     <Rotate>
@@ -91,7 +91,7 @@ export const ContactForm = () => {
                     <Boton onClick={() => setEstadoModal(false)}>Aceptar</Boton>
                 </Contenido>
             </Modal>
-        </div>
+        </>
     );
 };
 
@@ -111,9 +111,7 @@ const Boton = styled.div`
 `;
 
 const Contenido = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     p {
         font-size: 1rem;
         margin-bottom: 20px;

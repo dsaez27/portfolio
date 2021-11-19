@@ -28,7 +28,7 @@ const SkillsContainer = styled.div`
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 2rem 0;
+    padding: 1rem;
 `;
 
 const SkillItem = styled.div`

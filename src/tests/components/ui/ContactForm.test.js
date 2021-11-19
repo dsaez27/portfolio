@@ -4,6 +4,7 @@ import { act } from 'react-dom/test-utils';
 import '@testing-library/jest-dom';
 import { ContactForm } from '../../../components/ui/ContactForm';
 import { Modal } from './../../../components/ui/Modal';
+import { mount } from 'enzyme';
 
 describe('Pruebas en <ContactForm />', () => {
     beforeEach(() => {
@@ -15,6 +16,11 @@ describe('Pruebas en <ContactForm />', () => {
             disconnect: () => null,
         });
         window.IntersectionObserver = mockIntersectionObserver;
+    });
+
+    test('Debe de mostrarse el formulario', () => {
+        const wrapper = render(<ContactForm />);
+        expect(wrapper).toMatchSnapshot();
     });
 
     test('mostrar error en input nombre', async () => {
@@ -112,6 +118,8 @@ describe('Pruebas en <ContactForm />', () => {
 
         rerender(<Modal cambiarEstado={true} />);
 
-        expect(await findAllByText('Su mensaje ha sido enviado correctamente')).toBeTruthy();
+        expect(
+            await findAllByText('Su mensaje ha sido enviado correctamente')
+        ).toBeTruthy();
     });
 });

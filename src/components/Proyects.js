@@ -31,5 +31,5 @@ const CardContainer = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     display: grid;
     grid-gap: 1.2rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 `;
