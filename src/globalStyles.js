@@ -48,11 +48,10 @@ button, input, textarea {
 button{
   color: ${theme.whiteColor};
   background: #ff4a57;
-  border: none;
   cursor: pointer;
   height: 3rem;
   margin: 1rem 0px;
-  width: 10rem;
+  width: 8rem;
   font-size: 1rem;
   font-weight: bold;
 
@@ -67,7 +66,7 @@ button{
   font-size: 2rem;
   font-weight: bold;
   width: fit-content;
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   &::after {
     content: "";

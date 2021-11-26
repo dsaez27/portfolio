@@ -21,7 +21,6 @@ export const Burger = () => {
 const StyledBurger = styled.div`
     width: 1.5rem;
     height: 1.5rem;
-    position: absolute;
     top: 30px;
     right: 30px;
     z-index: 20;

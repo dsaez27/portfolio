@@ -3,13 +3,23 @@ import { Fade } from 'react-awesome-reveal';
 import styled from 'styled-components';
 import { Burger } from './Burger';
 import { theme } from './../../../globalStyles';
+import { Link } from 'react-scroll';
 
 export const Navbar = () => {
     return (
         <Nav>
             <div>
-                <Fade direction='bottom' duration='4000'>
-                    <div className='logo'>Portfolio</div>
+                <Fade direction='bottom' duration='1000'>
+                    <Link
+                        activeClass='active'
+                        to='home'
+                        spy={true}
+                        smooth={true}
+                        duration={1000}
+                        offset={-70}
+                    >
+                        <div className='logo'>dsaez</div>
+                    </Link>
                 </Fade>
                 <Burger />
             </div>
@@ -18,12 +28,11 @@ export const Navbar = () => {
 };
 
 const Nav = styled.nav`
-    height: 5rem;
+    height: 3.5rem;
     width: 100%;
     z-index: 3;
     position: fixed;
     top: 0;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +55,7 @@ const Nav = styled.nav`
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 1rem;
     }
 
     @media (max-width: ${theme.bpSmall}) {
@@ -61,5 +71,9 @@ const Nav = styled.nav`
         text-transform: uppercase;
         z-index: 20;
         cursor: pointer;
+
+        &::first-letter {
+            color: ${theme.primaryColor};
+        }
     }
 `;

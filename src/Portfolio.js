@@ -18,16 +18,10 @@ export const Portfolio = () => {
             <Navbar />
             <Container>
                 <Home />
-                <Fade direction='top' duration='2000'>
+                <Fade direction='top' duration='1500' triggerOnce={true}>
                     <About />
-                </Fade>
-                <Fade direction='top' duration='2000'>
                     <Skills />
-                </Fade>
-                <Fade direction='top' duration='2000'>
                     <Projects />
-                </Fade>
-                <Fade direction='top' duration='2000'>
                     <Contact />
                 </Fade>
             </Container>

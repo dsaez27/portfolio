@@ -8,7 +8,7 @@ export const Draw = () => {
         <DrawContainer>
             <div>
                 <div className='moon'>
-                    <Fade direction='right' duration='2000'>
+                    <Fade direction='bottom' duration='1000' triggerOnce={true}>
                         <img
                             src={portfolioImages('./moon.svg').default}
                             alt='moon'
@@ -16,7 +16,7 @@ export const Draw = () => {
                     </Fade>
                 </div>
                 <div className='boy'>
-                    <Fade direction='left' duration='2000'>
+                    <Fade direction='left' duration='1000' triggerOnce={true}>
                         <img
                             src={portfolioImages('./boy.svg').default}
                             alt='boy'
