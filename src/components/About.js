@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { portfolioImages } from './../helpers/helperImages';
+import { theme } from './../globalStyles';
 
 export const About = () => {
     return (
@@ -18,8 +19,13 @@ export const About = () => {
                     alt='Profile Image'
                 />
                 <Profile>
-                    <h1>"Daniel Sáez"</h1>
-                    <span></span>
+                    <h2>Daniel Sáez</h2>
+                    <span>Analista Programador</span>
+                    <div>
+                        <img src={portfolioImages('./linkedin.png').default} alt='Linkedin' />
+                        <img src={portfolioImages('./github.png').default} alt='Github' />
+                        <img src={portfolioImages('./email.png').default} alt='Email' />
+                    </div>
                 </Profile>
             </AboutContainer>
         </>
@@ -50,7 +56,7 @@ const ProfileImage = styled.img`
     transform: translateY(75%);
     position: absolute;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${theme.bpSmall}) {
         width: 100px;
         height: 100px;
         transform: translateY(150%);
@@ -65,9 +71,34 @@ const Profile = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h2 {
+        padding: 1rem 0 0;
+        color: ${theme.primaryColor};
+    }
+
     span {
         padding: 0;
         color: #fff;
         font-weight: 300;
+        font-size: 12px;
+        font-style: italic;
     }
+
+    div {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: .5rem;
+        margin: .5rem;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
 `;

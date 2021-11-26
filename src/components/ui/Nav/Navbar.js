@@ -39,7 +39,7 @@ const Nav = styled.nav`
         opacity: 0.8;
     }
 
-    @media (max-width: ${theme.bpSM}) {
+    @media (max-width: ${theme.bpSmall}) {
         justify-content: flex-start; 
         padding: 0 1rem;
     }

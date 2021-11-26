@@ -75,12 +75,12 @@ const ContenedorModal = styled.div`
     @media ${device.xs} {
         max-width: 85%;
         max-height: 90vh;
-        margin: 15px 0;
+        margin: 1rem 0;
     }
     @media ${device.sm} {
         max-width: 500px;
         max-height: 90vh;
-        margin: 15px 0;
+        margin: 1rem 0;
     }
     overflow-y: overlay;
     min-height: 100px;

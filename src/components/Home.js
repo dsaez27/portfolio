@@ -55,7 +55,7 @@ const HomeTitle = styled.h1`
 const HomeSubTitle = styled.p`
     width: 60%;
 
-    @media (max-width: 530px) {
+    @media (max-width: ${theme.bpExtraSmall}) {
         font-size: 0.9rem;
         width: 100%;
     }

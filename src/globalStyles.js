@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
+    bpExtraSmall: '36rem', // 576px
     bpSmall: '48em', // 768px
     bpSM: '62rem', // 992px
     bpMedium: '64em', // 1024px
@@ -66,6 +67,7 @@ button{
   font-size: 2rem;
   font-weight: bold;
   width: fit-content;
+  padding: 2rem 0;
 
   &::after {
     content: "";
