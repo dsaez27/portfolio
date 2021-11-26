@@ -4,28 +4,29 @@ import styled from 'styled-components';
 import { Burger } from './Burger';
 import { theme } from './../../../globalStyles';
 
-
 export const Navbar = () => {
     return (
         <Nav>
-            <Fade direction='bottom' duration='4000'>
-                <div className='logo'>Portfolio</div>
-            </Fade>
-            <Burger />
+            <div>
+                <Fade direction='bottom' duration='4000'>
+                    <div className='logo'>Portfolio</div>
+                </Fade>
+                <Burger />
+            </div>
         </Nav>
     );
 };
 
 const Nav = styled.nav`
-    align-items: center;
-    display: flex;
     height: 5rem;
-    justify-content: space-around;
     width: 100%;
     z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &::before {
         content: '';
@@ -39,8 +40,16 @@ const Nav = styled.nav`
         opacity: 0.8;
     }
 
+    > div {
+        width: ${theme.bpSM};
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     @media (max-width: ${theme.bpSmall}) {
-        justify-content: flex-start; 
+        justify-content: flex-start;
         padding: 0 1rem;
     }
 
