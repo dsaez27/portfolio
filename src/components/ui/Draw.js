@@ -41,16 +41,13 @@ const DrawContainer = styled.div`
         height: 300px;
 
         .moon {
-    
-
             img {
                 width: 120px;
                 height: 120px;
             }
         }
         .boy {
-            
-
+            transform: translateX(-100px);
             img {
                 width: 100px;
                 height: 300px;

@@ -5,7 +5,8 @@ import { ContactForm } from './ui/ContactForm';
 export const Contact = () => {
     return (
         <>
-            <h2>Contacto</h2>
+            <div id='contact' />
+            <h2 className='title_section'>Contacto</h2>
             <ContactContainer>
                 <ContactForm />
             </ContactContainer>
@@ -19,7 +20,6 @@ const ContactContainer = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     width: 500px;
-    padding: 2rem 0;
 
     @media (max-width: 768px) {
         width: 100%;

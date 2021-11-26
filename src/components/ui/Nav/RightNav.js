@@ -1,15 +1,70 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
-export const RightNav = ({ open }) => {
+export const RightNav = ({ open, setOpen }) => {
+    const handleClick = () => {
+        setOpen(!open);
+    };
+
     return (
         <>
             <Ul open={open}>
-                <li>Inicio</li>
-                <li>Sobre mí</li>
-                <li>Proyectos</li>
-                <li>Skills</li>
-                <li>Contacto</li>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={handleClick}
+                >
+                    <li>Inicio</li>
+                </Link>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={handleClick}
+                >
+                    <li>Sobre mí</li>
+                </Link>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={handleClick}
+                >
+                    <li>Proyectos</li>
+                </Link>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={handleClick}
+                >
+                    <li>Skills</li>
+                </Link>
+                <Link
+                    activeClass='active'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={handleClick}
+                >
+                    <li>Contacto</li>
+                </Link>
             </Ul>
         </>
     );

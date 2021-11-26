@@ -6,7 +6,8 @@ import { skills } from './../data/Skills';
 export const Skills = () => {
     return (
         <div>
-            <h2>Skills</h2>
+            <div id='skills' />
+            <h2 className='title_section'>Skills</h2>
             <SkillsContainer>
                 {skills.map((skill, index) => {
                     return (
@@ -26,9 +27,8 @@ export const Skills = () => {
 
 const SkillsContainer = styled.div`
     display: grid;
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 1rem;
 `;
 
 const SkillItem = styled.div`

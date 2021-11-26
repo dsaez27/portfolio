@@ -147,7 +147,7 @@ exports[`Pruebas en <Home /> Debe de mostrarse correctamente 1`] = `
       Fond of creating web application desings and bring them to life using code & develop mobile desings.
     </styled.p>
     <styled.button>
-      Creator journey
+      Ver Proyectos
     </styled.button>
   </styled.div>
 </Fragment>

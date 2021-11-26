@@ -6,6 +6,7 @@ import { Modal } from './Modal';
 import styled from 'styled-components';
 import { portfolioImages } from './../../helpers/helperImages';
 import { Rotate } from 'react-awesome-reveal';
+import { axios } from 'axios';
 
 const schema = yup.object().shape({
     name: yup.string().required('Nombre es requerido'),
@@ -34,8 +35,16 @@ export const ContactForm = () => {
     });
 
     const onSubmit = async (data) => {
-        setEstadoModal(true);
-        reset();
+        axios
+            .post('/api/', data)
+            .then((res) => {
+                setEstadoModal(true);
+                reset();
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     };
 
     return (

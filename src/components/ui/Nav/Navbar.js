@@ -2,6 +2,8 @@ import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import styled from 'styled-components';
 import { Burger } from './Burger';
+import { theme } from './../../../globalStyles';
+
 
 export const Navbar = () => {
     return (
@@ -21,7 +23,7 @@ const Nav = styled.nav`
     justify-content: space-around;
     width: 100%;
     z-index: 3;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -37,7 +39,7 @@ const Nav = styled.nav`
         opacity: 0.8;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: ${theme.bpSM}) {
         justify-content: flex-start; 
         padding: 0 1rem;
     }

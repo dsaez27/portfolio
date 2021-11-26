@@ -5,10 +5,12 @@ import styled from 'styled-components';
 import { particles } from './ui/particles';
 import './ui/particles.css';
 import { Draw } from './ui/Draw';
+import { theme } from './../globalStyles';
 
 export const Home = () => {
     return (
         <>
+            <div id='home' />
             <Particles
                 id='tsparticles'
                 options={particles}
@@ -21,10 +23,11 @@ export const Home = () => {
                     Front-end Developer
                 </HomeTitle>
                 <HomeSubTitle>
-                    Fond of creating web application desings and bring them to
-                    life using code & develop mobile desings.
+                    Bienvenido a mi portafolio, aquí podrás ver algunos de mis
+                    proyectos los cuáles son realizados con React.js, con una
+                    gran cantidad de componentes y estilos.
                 </HomeSubTitle>
-                <HomeButton>Creator journey</HomeButton>
+                <button>Ver Proyectos</button>
             </HomeContainer>
         </>
     );
@@ -35,34 +38,25 @@ const HomeContainer = styled.div`
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    padding: 1rem;
+    height: 90vh;
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: ${theme.bpSmall}) {
         justify-content: flex-end;
     }
 `;
 
 const HomeTitle = styled.h1`
     color: #fff;
-    @media (max-width: 768px) {
+    @media (max-width: ${theme.bpSmall}) {
         font-size: 2rem;
     }
 `;
 
 const HomeSubTitle = styled.p`
-    font-size: 1rem;
-    padding: 0.5rem 0;
-    width: 400px;
+    width: 60%;
 
     @media (max-width: 530px) {
         font-size: 0.9rem;
         width: 100%;
     }
-`;
-
-const HomeButton = styled.button`
-    color: #fff;
-    height: 3rem;
-    width: 10rem;
 `;

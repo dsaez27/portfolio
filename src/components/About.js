@@ -5,32 +5,28 @@ import { portfolioImages } from './../helpers/helperImages';
 export const About = () => {
     return (
         <>
-            <h2>Sobre mí</h2>
+            <div id='about' />
+            <h2 className='title_section'>Sobre mí</h2>
+
             <AboutContainer>
-                <AboutCard>
-                    <ProfileBackgroundImage
-                        src={portfolioImages('./astronout.png').default}
-                        alt='Astronout'
-                    />
-                    <ProfileImage
-                        src={portfolioImages('./profile.png').default}
-                        alt='Profile Image'
-                    />
-                    <Profile>
-                        <h1>"Daniel Sáez"</h1>
-                        <span></span>
-                    </Profile>
-                </AboutCard>
+                <ProfileBackgroundImage
+                    src={portfolioImages('./astronout.png').default}
+                    alt='Astronout'
+                />
+                <ProfileImage
+                    src={portfolioImages('./profile.png').default}
+                    alt='Profile Image'
+                />
+                <Profile>
+                    <h1>"Daniel Sáez"</h1>
+                    <span></span>
+                </Profile>
             </AboutContainer>
         </>
     );
 };
 
 const AboutContainer = styled.div`
-    padding: 1rem;
-`;
-
-const AboutCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;

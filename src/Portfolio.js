@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { GlobalStyles } from './globalStyles';
+import { GlobalStyles, theme } from './globalStyles';
 import { Navbar } from './components/ui/Nav/Navbar';
 import { Home } from './components/Home';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
-import { Proyects } from './components/Proyects';
+import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/ui/Footer';
 import { Fade } from 'react-awesome-reveal';
@@ -25,7 +25,7 @@ export const Portfolio = () => {
                     <Skills />
                 </Fade>
                 <Fade direction='top' duration='2000'>
-                    <Proyects />
+                    <Projects />
                 </Fade>
                 <Fade direction='top' duration='2000'>
                     <Contact />
@@ -42,12 +42,8 @@ const Container = styled.div`
     align-items: center;
 
     > div {
-        max-width: 768px;
+        max-width: ${theme.bpSM};
         padding: 1rem;
         width: 100%;
-
-        &:first-child {
-            padding: 0;
-        }
     }
 `;

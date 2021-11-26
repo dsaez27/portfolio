@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { proyects } from '../data/proyects';
 import { Card } from './ui/Card';
-import { portfolioImages } from './../helpers/helperImages';
+import { portfolioImages } from '../helpers/helperImages';
+import { projects } from './../data/projects';
 
-export const Proyects = () => {
+export const Projects = () => {
     return (
         <div>
-            <h2>Proyectos</h2>
-
+            <div id='projects' />
+            <h2 className='title_section'>Proyectos</h2>
             <CardContainer>
-                {proyects.map((proyect, index) => {
+                {projects.map((proyect, index) => {
                     return (
                         <Card
                             key={index}
@@ -30,6 +30,5 @@ export const Proyects = () => {
 const CardContainer = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     display: grid;
-    grid-gap: 1.2rem;
-    padding: 1rem 0;
+    grid-gap: 1rem;
 `;

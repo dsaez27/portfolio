@@ -13,10 +13,11 @@ export const Burger = () => {
                 <div />
             </StyledBurger>
 
-            <RightNav open={open} />
+            <RightNav open={open} setOpen={setOpen} />
         </>
     );
 };
+
 const StyledBurger = styled.div`
     width: 1.5rem;
     height: 1.5rem;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en <Proyects /> debe de funcionar correctamente 1`] = `
+exports[`Pruebas en <projects /> debe de funcionar correctamente 1`] = `
 <div>
   <h2>
     Proyectos
