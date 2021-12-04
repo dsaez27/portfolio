@@ -21,8 +21,6 @@ export const Burger = () => {
 const StyledBurger = styled.div`
     width: 1.5rem;
     height: 1.5rem;
-    top: 30px;
-    right: 30px;
     z-index: 20;
     display: none;
     cursor: pointer;
@@ -35,11 +33,12 @@ const StyledBurger = styled.div`
 
     div {
         width: 1.5rem;
-        height: 0.09rem;
+        height: 0.1rem;
         background: #fff;
         transition: all 0.3s ease-in;
         position: relative;
         transform-origin: 1px;
+        border-radius: 5px
 
         &:nth-child(1) {
             transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};

@@ -1,31 +1,85 @@
 import React from 'react';
 import styled from 'styled-components';
-import { portfolioImages } from './../helpers/helperImages';
+import { helperImages } from './../helpers/helperImages';
 import { theme } from './../globalStyles';
+import { helperFiles } from './../helpers/helperFiles';
 
 export const About = () => {
     return (
         <>
             <div id='about' />
-            <h2 className='title_section'>Sobre mí</h2>
+            <h1 className='title_section'>Sobre mí</h1>
 
             <AboutContainer>
                 <ProfileBackgroundImage
-                    src={portfolioImages('./astronout.png').default}
+                    src={helperImages('./astronout.png').default}
                     alt='Astronout'
                 />
                 <ProfileImage
-                    src={portfolioImages('./profile.png').default}
+                    src={helperImages('./profile.png').default}
                     alt='Profile Image'
                 />
                 <Profile>
-                    <h2>Daniel Sáez</h2>
+                    <h1>Daniel Sáez</h1>
                     <span>Analista Programador</span>
                     <div>
-                        <img src={portfolioImages('./linkedin.png').default} alt='Linkedin' />
-                        <img src={portfolioImages('./github.png').default} alt='Github' />
-                        <img src={portfolioImages('./email.png').default} alt='Email' />
+                        <a
+                            href='https://www.linkedin.com/in/daniel-s%C3%A1ez-hern%C3%A1ndez-361081115/'
+                            target='_blank'
+                            rel='noreferrer'
+                            title='Linkedin'
+                        >
+                            <img
+                                src={helperImages('./linkedin.png').default}
+                                alt='Linkedin'
+                                className='icon_size'
+                            />
+                        </a>
+                        <a
+                            href='https://github.com/dsaez27'
+                            target='_blank'
+                            rel='noreferrer'
+                            title='Github'
+                        >
+                            <img
+                                src={helperImages('./github.png').default}
+                                alt='Github'
+                                className='icon_size'
+                            />
+                        </a>
+                        <a
+                            href='mailto:daniel.s.saez.h@gmail.com'
+                            target='_blank'
+                            rel='noreferrer'
+                            title='Email'
+                        >
+                            <img
+                                src={helperImages('./email.png').default}
+                                alt='Email'
+                                className='icon_size'
+                            />
+                        </a>
                     </div>
+                    <p>
+                        "Soy amante de la programación, me encantan los
+                        desafios, me gusta aprender y trabajar en equipo.
+                        Actualmente me encuentro en la realizacion dede algunos
+                        cursos para aumentar mis habilidades como desarrollador
+                        web."
+                    </p>
+                    <a
+                        href={helperFiles('./Daniel_Saez_CV.pdf').default}
+                        target='_blank'
+                        rel='noreferrer'
+                        title='Descargar CV'
+                    >
+                        <img
+                            src={helperImages('./curriculum.png').default}
+                            alt='CV'
+                            className='icon_size'
+                        />
+                        Descargar CV
+                    </a>
                 </Profile>
             </AboutContainer>
         </>
@@ -66,15 +120,16 @@ const ProfileImage = styled.img`
 const Profile = styled.div`
     width: 100%;
     height: 100%;
-    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5rem 0 2rem;
 
-    h2 {
-        padding: 1rem 0 0;
+    h1 {
         color: ${theme.primaryColor};
+        font-size: 2rem;
+        padding: 0;
     }
 
     span {
@@ -83,22 +138,39 @@ const Profile = styled.div`
         font-weight: 300;
         font-size: 12px;
         font-style: italic;
+        padding: 0 0 0.5rem;
     }
 
     div {
-
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        gap: .5rem;
-        margin: .5rem;
-
-        img{
-            width: 30px;
-            height: 30px;
-        }
+        gap: 0.5rem;
+        padding: 1rem 0;
     }
 
+    p {
+        width: min(300px, 100%);
+        height: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
 
+    > a {
+        color: ${theme.primaryColor};
+        font-size: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 2rem 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 `;

@@ -17,7 +17,7 @@ export const RightNav = ({ open, setOpen }) => {
                         spy={true}
                         smooth={true}
                         duration={1000}
-                        offset={-70}
+                        offset={-32}
                         onClick={handleClick}
                     >
                         Inicio
@@ -30,7 +30,7 @@ export const RightNav = ({ open, setOpen }) => {
                         spy={true}
                         smooth={true}
                         duration={1000}
-                        offset={-70}
+                        offset={-32}
                         onClick={handleClick}
                     >
                         Sobre mí
@@ -43,7 +43,7 @@ export const RightNav = ({ open, setOpen }) => {
                         spy={true}
                         smooth={true}
                         duration={1000}
-                        offset={-70}
+                        offset={-32}
                         onClick={handleClick}
                     >
                         Proyectos
@@ -56,7 +56,7 @@ export const RightNav = ({ open, setOpen }) => {
                         spy={true}
                         smooth={true}
                         duration={1000}
-                        offset={-70}
+                        offset={-32}
                         onClick={handleClick}
                     >
                         Skills
@@ -69,7 +69,7 @@ export const RightNav = ({ open, setOpen }) => {
                         spy={true}
                         smooth={true}
                         duration={1000}
-                        offset={-70}
+                        offset={-32}
                         onClick={handleClick}
                     >
                         Contacto

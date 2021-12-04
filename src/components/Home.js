@@ -23,9 +23,9 @@ export const Home = () => {
                     Front-end Developer
                 </HomeTitle>
                 <HomeSubTitle>
-                    Bienvenido a mi portafolio, aquí podrás ver algunos de mis
-                    proyectos los cuáles son realizados con React.js, con una
-                    gran cantidad de componentes y estilos.
+                    Bienvenido a mi portafolio personal, aquí podrás ver algunos
+                    de mis proyectos, con
+                    una gran cantidad de componentes, estilos y tecnologías diferentes. 
                 </HomeSubTitle>
                 <button>Ver Proyectos</button>
             </HomeContainer>

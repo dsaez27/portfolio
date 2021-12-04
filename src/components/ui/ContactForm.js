@@ -4,9 +4,9 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Modal } from './Modal';
 import styled from 'styled-components';
-import { portfolioImages } from './../../helpers/helperImages';
+import { helperImages } from './../../helpers/helperImages';
 import { Rotate } from 'react-awesome-reveal';
-import { axios } from 'axios';
+import axios from 'axios';
 
 const schema = yup.object().shape({
     name: yup.string().required('Nombre es requerido'),
@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
     const onSubmit = async (data) => {
         axios
-            .post('/api/', data)
+            .post('https://portfolio-dsaez.herokuapp.com/api/', data)
             .then((res) => {
                 setEstadoModal(true);
                 reset();
@@ -91,7 +91,7 @@ export const ContactForm = () => {
                 <Contenido>
                     <Rotate>
                         <img
-                            src={portfolioImages('./check.png').default}
+                            src={helperImages('./check.png').default}
                             alt='check'
                         />
                     </Rotate>

@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { portfolioImages } from './../../helpers/helperImages';
+import { helperImages } from './../../helpers/helperImages';
 
 export const Footer = () => {
     return (
         <Foot>
             <span>Made with</span>
             <img
-                src={portfolioImages('./heart.png').default}
+                src={helperImages('./heart.png').default}
                 alt='Corazón Rojo'
             />
         </Foot>

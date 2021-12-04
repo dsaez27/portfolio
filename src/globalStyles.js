@@ -66,7 +66,7 @@ button{
   font-size: 2rem;
   font-weight: bold;
   width: fit-content;
-  padding: 1rem 0;
+  padding: 2rem 0;
 
   &::after {
     content: "";
@@ -75,5 +75,10 @@ button{
     height: 3px;
     width: 60%;
   }
+}
+
+.icon_size{
+  width: 2rem;
+  height: 2rem;
 }
 `;

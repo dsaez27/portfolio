@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { portfolioImages } from './../helpers/helperImages';
+import { helperImages } from './../helpers/helperImages';
 import { skills } from './../data/Skills';
 
 export const Skills = () => {
@@ -13,7 +13,7 @@ export const Skills = () => {
                     return (
                         <SkillItem key={index}>
                             <SkillIcon
-                                src={portfolioImages(skill.image).default}
+                                src={helperImages(skill.image).default}
                                 alt={skill.name}
                             />
                             <SkillName>{skill.name}</SkillName>

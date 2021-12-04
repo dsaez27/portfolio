@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Card } from './ui/Card';
-import { portfolioImages } from '../helpers/helperImages';
+import { helperImages } from '../helpers/helperImages';
 import { projects } from './../data/projects';
 
 export const Projects = () => {
@@ -16,7 +16,7 @@ export const Projects = () => {
                             key={index}
                             title={proyect.title}
                             description={proyect.description}
-                            image={portfolioImages(proyect.image).default}
+                            image={helperImages(proyect.image).default}
                             link={proyect.link}
                             technologies={proyect.technologies}
                         />

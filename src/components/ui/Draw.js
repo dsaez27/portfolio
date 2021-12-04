@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import styled from 'styled-components';
-import { portfolioImages } from '../../helpers/helperImages';
+import { helperImages } from '../../helpers/helperImages';
 
 export const Draw = () => {
     return (
@@ -10,7 +10,7 @@ export const Draw = () => {
                 <div className='moon'>
                     <Fade direction='bottom' duration='1000' triggerOnce={true}>
                         <img
-                            src={portfolioImages('./moon.svg').default}
+                            src={helperImages('./moon.svg').default}
                             alt='moon'
                         />
                     </Fade>
@@ -18,7 +18,7 @@ export const Draw = () => {
                 <div className='boy'>
                     <Fade direction='left' duration='1000' triggerOnce={true}>
                         <img
-                            src={portfolioImages('./boy.svg').default}
+                            src={helperImages('./boy.svg').default}
                             alt='boy'
                         />
                     </Fade>
@@ -41,13 +41,14 @@ const DrawContainer = styled.div`
         height: 300px;
 
         .moon {
+            transform: translateY(-50px);
             img {
                 width: 120px;
                 height: 120px;
             }
         }
         .boy {
-            transform: translateX(-100px);
+            transform: translateX(-190px);
             img {
                 width: 100px;
                 height: 300px;

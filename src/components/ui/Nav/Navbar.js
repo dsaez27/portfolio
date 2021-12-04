@@ -16,7 +16,7 @@ export const Navbar = () => {
                         spy={true}
                         smooth={true}
                         duration={1000}
-                        offset={-70}
+                        offset={0}
                     >
                         <div className='logo'>dsaez</div>
                     </Link>
@@ -65,7 +65,7 @@ const Nav = styled.nav`
 
     .logo {
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         padding: 15px 0;
         text-transform: uppercase;
