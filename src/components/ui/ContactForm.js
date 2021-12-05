@@ -36,7 +36,7 @@ export const ContactForm = () => {
 
     const onSubmit = async (data) => {
         axios
-            .post('https://portfolio-dsaez.herokuapp.com/api/', data)
+            .post('https://portfolio-dsaez.herokuapp.com/contact', data)
             .then((res) => {
                 setEstadoModal(true);
                 reset();
