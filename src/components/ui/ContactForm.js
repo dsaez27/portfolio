@@ -18,8 +18,7 @@ const schema = yup.object().shape({
         .string()
         .required('Mensaje es requerido')
         .min(10, 'Mínimo 10 caracteres')
-        .max(100, 'Máximo 100 caracteres')
-        .matches(/^[a-zA-Z0-9 ]*$/, 'Sólo se permiten letras y números'),
+        .max(100, 'Máximo 100 caracteres'),
 });
 
 export const ContactForm = () => {
