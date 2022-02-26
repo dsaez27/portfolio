@@ -9,7 +9,7 @@ export const Navbar = () => {
     return (
         <Nav>
             <div>
-                <Fade direction='bottom' duration='1000'>
+                <Fade direction='bottom' duration='2000'>
                     <Link
                         activeClass='active'
                         to='home'

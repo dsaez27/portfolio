@@ -2,6 +2,9 @@
 
 exports[`Pruebas en <Home /> Debe de mostrarse correctamente 1`] = `
 <Fragment>
+  <div
+    id="home"
+  />
   <v
     height="100%"
     id="tsparticles"
@@ -144,11 +147,11 @@ exports[`Pruebas en <Home /> Debe de mostrarse correctamente 1`] = `
       Front-end Developer
     </styled.h1>
     <styled.p>
-      Fond of creating web application desings and bring them to life using code & develop mobile desings.
+      Bienvenido a mi portafolio personal, aquí podrás ver algunos de mis proyectos, con una gran cantidad de componentes, estilos y tecnologías diferentes.
     </styled.p>
-    <styled.button>
+    <button>
       Ver Proyectos
-    </styled.button>
+    </button>
   </styled.div>
 </Fragment>
 `;

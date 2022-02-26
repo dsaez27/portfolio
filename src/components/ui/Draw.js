@@ -1,58 +1,48 @@
-import React from 'react';
-import { Fade } from 'react-awesome-reveal';
-import styled from 'styled-components';
-import { helperImages } from '../../helpers/helperImages';
+import React from "react";
+import { Fade } from "react-awesome-reveal";
+import styled from "styled-components";
+import { helperImages } from "../../helpers/helperImages";
 
 export const Draw = () => {
     return (
-        <DrawContainer>
-            <div>
-                <div className='moon'>
-                    <Fade direction='bottom' duration='1000' triggerOnce={true}>
-                        <img
-                            src={helperImages('./moon.svg').default}
-                            alt='moon'
-                        />
-                    </Fade>
-                </div>
-                <div className='boy'>
-                    <Fade direction='left' duration='1000' triggerOnce={true}>
-                        <img
-                            src={helperImages('./boy.svg').default}
-                            alt='boy'
-                        />
-                    </Fade>
-                </div>
-            </div>
-        </DrawContainer>
+        <>
+            <DrawContainer>
+                <Fade direction="bottom" duration="2000" triggerOnce={true}>
+                    <Moon src={helperImages("./moon.svg").default} alt="moon" />
+                </Fade>
+
+                <Fade direction="left" duration="2000" triggerOnce={true}>
+                    <Boy src={helperImages("./boy.svg").default} alt="boy" />
+                </Fade>
+            </DrawContainer>
+        </>
     );
 };
 
 const DrawContainer = styled.div`
-    height: 100%;
-    max-width: 800px;
-    position: absolute;
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+`;
 
-    > div {
-        height: 300px;
+const Moon = styled.img`
+    transform: translate(100px, 0px);
+    width: 120px;
+    height: 120px;
 
-        .moon {
-            transform: translateY(-50px);
-            img {
-                width: 120px;
-                height: 120px;
-            }
-        }
-        .boy {
-            transform: translateX(-190px);
-            img {
-                width: 100px;
-                height: 300px;
-            }
-        }
+    @media (max-width: 768px) {
+        transform: translate(120px, 0px);
+    }
+`;
+
+const Boy = styled.img`
+    transform: translate(-100px, 50px);
+    width: 100px;
+    height: 300px;
+
+    @media (max-width: 768px) {
+        transform: translate(-100px, 0px);
     }
 `;
