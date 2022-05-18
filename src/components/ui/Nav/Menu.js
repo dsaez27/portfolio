@@ -2,23 +2,22 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { RightNav } from './RightNav';
 
-export const Burger = () => {
+export const Menu = () => {
     const [open, setOpen] = useState(false);
-
     return (
         <>
-            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+            <Burger open={open} onClick={() => setOpen(!open)}>
                 <div />
                 <div />
                 <div />
-            </StyledBurger>
+            </Burger>
 
             <RightNav open={open} setOpen={setOpen} />
         </>
     );
 };
 
-const StyledBurger = styled.div`
+const Burger = styled.div`
     width: 1.5rem;
     height: 1.5rem;
     z-index: 20;
@@ -38,7 +37,7 @@ const StyledBurger = styled.div`
         transition: all 0.3s ease-in;
         position: relative;
         transform-origin: 1px;
-        border-radius: 5px;
+        border-radius: 3px;
 
         &:nth-child(1) {
             transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};

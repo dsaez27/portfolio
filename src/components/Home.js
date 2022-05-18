@@ -61,7 +61,7 @@ const HomeTitle = styled.h1`
     color: #fff;
     @media (max-width: ${theme.bpSmall}) {
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 `;
 

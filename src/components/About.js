@@ -16,15 +16,14 @@ export const About = () => {
                     alt='Astronout'
                 />
                 <ProfileImage
-                    src={helperImages('./profile.png').default}
-                    alt='Profile Image'
+                    src="https://avatars.githubusercontent.com/u/23344875?v=4" alt='Profile Image'
                 />
                 <Profile>
                     <h1>Daniel Sáez</h1>
                     <span>Analista Programador</span>
                     <div>
                         <a
-                            href='https://www.linkedin.com/in/daniel-s%C3%A1ez-hern%C3%A1ndez-361081115/'
+                            href='https://www.linkedin.com/in/dsaezh/'
                             target='_blank'
                             rel='noreferrer'
                             title='Linkedin'
@@ -91,7 +90,7 @@ const AboutContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: #2b2d41;
-    border-radius: 0.5rem;
+    border-radius: 3px;
     box-shadow: 0px 14px 32px 0px rgb(0 0 0 / 15%);
 `;
 
@@ -99,7 +98,7 @@ const ProfileBackgroundImage = styled.img`
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 3px 0 0;
 `;
 
 const ProfileImage = styled.img`

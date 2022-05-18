@@ -87,7 +87,7 @@ const ContenedorModal = styled.div`
     background-color: ${(props) =>
         props.background ? props.background : '#212336'};
     position: relative;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
     padding: ${(props) => (props.padding ? props.padding : '20px')};
     &::-webkit-scrollbar {
@@ -95,7 +95,7 @@ const ContenedorModal = styled.div`
     }
     &::-webkit-scrollbar-thumb {
         background: #ccc;
-        border-radius: 4px;
+        border-radius: 3px;
     }
     &::-webkit-scrollbar-thumb:active {
         background-color: #999999;
@@ -106,7 +106,7 @@ const ContenedorModal = styled.div`
     }
     &::-webkit-scrollbar-track {
         background: #e1e1e1;
-        border-radius: 4px;
+        border-radius: 3px;
     }
     &::-webkit-scrollbar-track:hover,
     &::-webkit-scrollbar-track:active {
@@ -134,7 +134,7 @@ const BotonCerrar = styled.div`
     background: none;
     cursor: pointer;
     transition: all ease 0.3s;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #1766dc;
     &:hover {
         background: rgba(10, 10, 10, 0.6);

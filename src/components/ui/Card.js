@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export const Card = ({ title, description, image, link, technologies }) => {
     return (
@@ -30,7 +30,7 @@ const CardContainer = styled.div`
     position: relative;
     height: 12rem;
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-radius: 3px;
     flex: 1;
     min-width: 260px;
     box-shadow: 0 0 1rem rgb(0 0 0 / 50%);
@@ -40,7 +40,7 @@ const CardContainer = styled.div`
     -moz-transform: translate3d(0, 0, 0);
 
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -57,7 +57,7 @@ const CardContainer = styled.div`
 
     &:hover {
         img {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
 `;
@@ -108,7 +108,7 @@ const CardTechnologyItem = styled.span`
     display: inline-block;
     margin: 0 0.5rem 0 0;
     padding: 0.2rem 0.3rem;
-    border-radius: 1rem;
+    border-radius: 3px;
     background: #f44653;
     color: #fff;
     font-size: 0.7rem;

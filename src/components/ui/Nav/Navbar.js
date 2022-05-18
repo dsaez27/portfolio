@@ -1,9 +1,9 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import styled from 'styled-components';
-import { Burger } from './Burger';
 import { theme } from './../../../globalStyles';
 import { Link } from 'react-scroll';
+import { Menu } from './Menu';
 
 export const Navbar = () => {
     return (
@@ -21,7 +21,7 @@ export const Navbar = () => {
                         <div className='logo'>dsaez</div>
                     </Link>
                 </Fade>
-                <Burger />
+                <Menu />
             </div>
         </Nav>
     );
