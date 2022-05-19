@@ -58,7 +58,8 @@ const HomeContainer = styled.div`
 `;
 
 const HomeTitle = styled.h1`
-
+    font-size: 3rem;
+    
     @media (max-width: ${theme.bpSmall}) {
         text-align: center;
         font-size: 3rem;

@@ -36,6 +36,10 @@ p{
     font-weight: 300;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: ${theme.whiteColor};
+}
+
 button, input, textarea {
     font-family: 'Open Sans', sans-serif;
     border: none;
