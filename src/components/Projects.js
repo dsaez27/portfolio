@@ -15,7 +15,6 @@ export const Projects = () => {
                         <Card
                             key={index}
                             title={proyect.title}
-                            description={proyect.description}
                             image={helperImages(proyect.image).default}
                             link={proyect.link}
                             technologies={proyect.technologies}

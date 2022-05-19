@@ -30,7 +30,6 @@ export const projects = [
     {
         id: 5,
         title: "Ecommerce",
-        description: "",
         image: "./calculadora.png",
         link: "https://www.google.com",
         technologies: ["React", "Redux", "NodeJS", "MongoDB"],
@@ -38,7 +37,6 @@ export const projects = [
     {
         id: 6,
         title: "Journal App",
-        description: "",
         image: "./calculadora.png",
         link: "https://www.google.com",
         technologies: ["React", "NodeJS", "MongoDB"],
