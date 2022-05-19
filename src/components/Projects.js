@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Card } from './ui/Card';
-import { helperImages } from '../helpers/helperImages';
-import { projects } from './../data/projects';
+import React from "react";
+import styled from "styled-components";
+import { Card } from "./ui/Card";
+import { helperImages } from "../helpers/helperImages";
+import { projects } from "./../data/projects";
 
 export const Projects = () => {
     return (
         <div>
-            <div id='projects' />
-            <h2 className='title_section'>Proyectos</h2>
+            <div id="projects" />
+            <h2 className="title_section">Proyectos</h2>
             <CardContainer>
                 {projects.map((proyect, index) => {
                     return (
