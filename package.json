@@ -1,7 +1,7 @@
 {
     "name": "portfolio",
-    "version": "0.1.0",
-    "homepage": "https://dsaez27.github.io/Portfolio/",
+    "version": "0.2.0",
+    "homepage": "https://dsaez27.github.io/portfolio/",
     "private": true,
     "dependencies": {
         "@cypress/react": "^5.10.3",
