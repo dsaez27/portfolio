@@ -16,8 +16,8 @@ export const Home = () => {
             <HomeContainer style={{ zIndex: "2" }}>
                 <HomeLeft>
                     <HomeTitle>
-                        Hello I'm a <br />
-                        Front-end Developer
+                        Hello I'm a<br />
+                        Frontend Developer
                     </HomeTitle>
                     <HomeSubTitle>
                         Bienvenido a mi portafolio personal, aquí podrás ver
@@ -58,6 +58,7 @@ const HomeContainer = styled.div`
 `;
 
 const HomeTitle = styled.h1`
+
     @media (max-width: ${theme.bpSmall}) {
         text-align: center;
         font-size: 3rem;
